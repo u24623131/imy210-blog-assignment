@@ -5,7 +5,7 @@
     <div v-if="pending">Loading...</div>
     <div v-else-if="error">Error: {{ error.message }}</div>
     <div v-else>
-      <div v-for="post in results" :key="post.id" style="border:1px solid #ccc; margin:10px; padding:10px;">
+      <div v-for="post in results" :key="post.id" class="post-card">
         <h2>{{ post.title }}</h2>
         <p>{{ post.author }}</p>
         <NuxtLink :to="`/blog/${post.id}`">Read</NuxtLink>

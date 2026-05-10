@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <h1>Blog</h1>
     <select v-model="selectedCategory">
       <option value="">All categories</option>
@@ -9,7 +9,7 @@
     <div v-if="pending">Loading posts...</div>
     <div v-else-if="error">Error: {{ error.message }}</div>
     <div v-else>
-      <div v-for="post in filteredPosts" :key="post.id" style="border:1px solid #ccc; margin:10px; padding:10px;">
+      <div v-for="post in filteredPosts" :key="post.id" class="post-card">
         <h2>{{ post.title }}</h2>
         <p><strong>{{ post.author }}</strong></p>
         <p>{{ post.snippet || post.content.substring(0,100) }}...</p>
