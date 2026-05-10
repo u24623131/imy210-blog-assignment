@@ -35,4 +35,4 @@ const filteredPosts = computed(() => {
   if (!selectedCategory.value) return posts.value.data
   return posts.value.data.filter(p => p.category === selectedCategory.value)
 })
-</script>
+</script>// Homepage
