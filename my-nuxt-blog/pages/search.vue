@@ -29,4 +29,4 @@ const results = computed(() => {
     p.title.toLowerCase().includes(q) || p.author.toLowerCase().includes(q)
   )
 })
-</script>
+</script>// Search
